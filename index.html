@@ -1,222 +1,447 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<title>Yash Yagnik Personal Website</title>
+		<title>Yash Yagnik | Computer Science Student</title>
 		<link rel="icon" type="image/png" href="Gemini_Generated_Image_cto2vccto2vccto2.png">
-		
-		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/modern.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-		<style>
-			.image-container {
-				position: absolute; /* Absolute positioning */
-				right: 20px; /* Distance from the right side */
-				top: 57px; /* Distance from the top */
-			}
-		</style>
 	</head>
 	<body class="is-preload">
-		
+		<!-- Floating Particles Background -->
+		<div class="particles" id="particles"></div>
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <h1><a href="index.html">Solid State</a></h1> -->
-						<!-- <a href="index.html" class="logo">
-							<img src="YY_Logo.png" class="logo">
-						</a>
-						<style>
-							.logo img {
-								width: 50px;
-								height: auto;
-								margin-top: 8px;
-							} -->
-							<h1>Yash Yagnik Personal Website</h1>
-						</style>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="#one">Work Experience</a></li>
-								<li><a href="#two">Certifications</a></li>
-								<li><a href="#four">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header" class="alt">
+				<div class="header-content">
+					<a class="logo-text" id="logo-text" href="index.html" aria-label="Home">YY</a>
+					<nav class="top-nav" aria-label="Primary">
+						<a href="experience.html">Experience</a>
+						<a href="projects.html">Projects</a>
+						<a href="about.html">About</a>
+						<a href="#contact">Contact</a>
+						<a href="#menu" class="menu-toggle">Menu</a>
 					</nav>
-
-				<!-- Banner -->
-				 <!-- The "<br>" is really nice here and it acts as a new line character in python, use this when you need an ln feature-->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Yash Yagnik</h2>
-							<p> I'm currently a senior attending Stevens Institute Of Technology <br> pursuing a computer science degree. My relevant projects and <br> achievements are displayed below. <br> <br> Website is regulary being updated with new content! </p>
-						</div> 
-						
-					</section>
-
-					<div class="image-container">
-						<a href="#" class="image">
-							<img src="Yash_website_photo.png" alt="Yash Yagnik Photo" />
-						</a>
+					<div class="theme-switch" title="Light/Dark mode">
+						<span class="theme-switch__icon" aria-hidden="true">☾</span>
+						<button id="theme-toggle" class="theme-switch__btn" type="button" aria-label="Toggle light/dark mode" aria-pressed="false">
+							<span class="theme-switch__thumb" aria-hidden="true"></span>
+						</button>
 					</div>
+				</div>
+			</header>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<!-- Experiences -->
+			<!-- Menu -->
+			<nav id="menu">
+				<div class="inner">
+					<h2>Navigation</h2>
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<a href="#" class="close">Close</a>
+				</div>
+			</nav>
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="Comcast Logo.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Work Experience</h2>
-										<p> Spent back to back summers at Comcast working as a SWE intern. Some of the projects that I worked on had to do with univariate and multivariate anomaly detection models, building of a chatbot used to answer questions from a teams channel using Azure products like (LUIS and CLU), I was also tasked with fixing bugs that related to multithreding and mutual exclusion in ticket maniplulation. </p>
-									</div>
-								</div>
-							</section>
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="Logos.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Courses/Certifications</h2>
-										<p>Through school I have studied Data Stuctures, Algorithms, Operating Systems, Computer Architecture and
-											Organization, Machine Learning: Fund & Apps, Web Programming. Also independently I have done a Data Science Bootcamp through Udemy and Building RAG Agents with LLMs course through NVIDIA <p>
-
-											</p> </p>
-											
-											<p>Career Essentials in Cybersecurity by Microsoft and LinkedIn -- <a href="https://www.linkedin.com/learning/certificates/8011ce2563d3239a55fde83a49c13e1c45d5378d7dc18d0882e4fef4aba8d1a9?accountId=56742337&u=56742337&success=true&authUUID=3ZL%2FVXU9SJiEjQcLRBiHwg%3D%3D">Certificate</a></p>
-											<p>Python for Data Science and Machine Learning Bootcamp by Udemy -- <a href="https://www.udemy.com/certificate/UC-f8d96c0a-edee-497a-881a-a0f7a7da601d/">Certificate</a></p>
-											<a href="https://www.linkedin.com/in/yash-yagnik-648045245/details/certifications/" rel="noopener noreferrer" target="_blank" class="special">Learn more</a>
-											
-										</div>
-								</div>
-							</section>
-							
-						<!-- Sports -->
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="Fencing Photo.JPG" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Sports</h2>
-										<p>I'm currently on the Men's fencing team at Stevens Institute of Technology. I have a 83.3% win rate and have been awarded with both All-Academic Team and Scholar of Distinction for maintaining my positon on the Dean's List</p>
-										<a href="https://stevensducks.com/sports/mens-fencing/roster/yash-yagnik/17437" rel="noopener noreferrer" target="_blank" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Projects</h2>
-									<p>These are some the comptuer science projects I have built.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="BokenBoards image.png" alt="" /></a>
-											<h3 class="major"><u>BokenBoards:</u>  JavaScript, HTML, CSS, Node.js, Express, MongoDB, GeoJSON</h3>
-											<p>Dynamic full-stack board game sharing web application; Leverages geospatial querying in MongoDB to deliver location-based search results for board games and events.</p>
-											<a href="https://github.com/Yash-Yagnik/BokenBoards" rel="noopener noreferrer" target="_blank" class="special">Source Code (GitHub)</a> 
-										</article>
-										<!-- <style>
-											.BBimage {
-												border-radius: 5px;
-											border: 0;
-											display: inline-block;
-											position: relative;
-											}
-										</style> -->
-
-										<article>
-											<a href="#" class="image"><img src="Senior Citizen Vaccine Image.png" alt="" /></a>
-											<h3 class="major"><u>Senior Citizen Covid-19 Vaccine Registration:</u> Python, Google Forms API</h3>
-											<p>Automated Covid-19 vaccine registration for senior citizens leveraging Python</p>
-											<a href="https://www.facebook.com/share/g/1EqVR811ix/?mibextid=wwXIfr" rel="noopener noreferrer" target="_blank" class="special">Facebook Group</a> 
-										</article>
-										
-										<article>
-											<a href="#" class="image"><img src="Concussion Project Image.png" alt="" /></a>
-											<h3 class="major"><u>Concussion Detection Gadget:</u> <br> Java, C, Kotlin, Android Studio, Hardware</h3>
-											<p>Device with embedded code that diagnose the severity of a head collison by calculating g-force. Paired with an Android app that displays the diagnoses.</p>
-											<a href="https://github.com/Yash-Yagnik/Concussion-Project/blob/main/Concussion%20Project%20Hardware%20Layout.pdf" rel="noopener noreferrer" target="_blank" class="special">Hardware Layout (GitHub)</a> 
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="Tiny Chat Image.png" alt="" /></a>
-											<h3 class="major"><u>TinyChat:</u> Erlang, Message Passing</h3>
-											<p>WhatsApp identical chatroom which can support up to 100 concurrent clients; Executed using Erlang message-passing</p>
-											<a href="https://github.com/Yash-Yagnik/TinyChat" rel="noopener noreferrer" target="_blank" class="special">Source Code (GitHub)</a> 
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="Trivia Image.png" alt="" /></a>
-											<h3 class="major"><u>Trivia:</u> C, File I/O</h3>
-											<p>Multiplayer Trivia game with server-client architecture, utilizes socket connections and file I/O for parsing command-line arguments, possess a large question database, and enables interactive gameplay.</p>
-											<a href="https://github.com/Yash-Yagnik/Trivia-Game" rel="noopener noreferrer" target="_blank" class="special">Source Code (GitHub)</a>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="Minishell image.png" alt="" /></a>
-											<h3 class="major"><u>Minishell:</u> C </h3>
-											<p>Custom shell with essential built-in commands (cd, pwd, lf, lp) and implemented signal handling. Emulates core Linux kernel functionalities, using exec() for additional command execution.</p>
-											<a href="https://github.com/Yash-Yagnik/Minishell" rel="noopener noreferrer" target="_blank" class="special">Source Code (GitHub)</a>
-										</article>
-										
-									<!-- </section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul> -->
-								</div>
-							</section>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="contact">
-						<div class="inner">
-							<h2 class="major">Contact</h2>
-							<p>Thank you so much for visiting my website, my contact information is listed below. Please feel free to reach out and I would love to chat!</p>
-							
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Greater Philadelpia Area, in NJ
-								</li>
-
-								<!-- The line below makes it so that people cannot be phised on your website -->
-								<!-- rel="noopener noreferrer" target="_blank" -->
-								<li class="icon solid fa-phone">(609)-923-5196</li>
-								<li class="icon solid fa-envelope"><a href="mailto:yashyagnik20@gmail.com" rel="noopener noreferrer" target="_blank">yashyagnik20@gmail.com</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/Yash-Yagnik" rel="noopener noreferrer" target="_blank">Github</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/yash-yagnik-648045245/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Yash Yagnik 2025</li>
-							</ul>
+			<!-- Hero Banner -->
+			<section id="banner">
+				<div class="hero-content">
+					<div class="hero-image-wrapper">
+						<div class="image-glow"></div>
+						<img src="Yash_website_photo.png" alt="Yash Yagnik" class="hero-image" />
+					</div>
+					<div class="hero-text">
+						<div class="greeting">Hello, I'm</div>
+						<h2 class="name-title">
+							<span class="name-gradient">Yash Yagnik</span>
+						</h2>
+						<div class="typing-text">
+							<span class="typing" id="typing-text"></span>
+							<span class="cursor">|</span>
 						</div>
-					</section>
+						<p class="hero-description">
+							<strong>AI/ML + Cloud Technical Lead</strong> building production-grade agents, RAG systems, and cloud platforms.
+							Senior CS student at <strong>Stevens Institute of Technology</strong> (GPA 3.77).
+						</p>
+						<div class="hero-badges">
+							<span class="badge">AI Agents</span>
+							<span class="badge">RAG / NLP</span>
+							<span class="badge">AWS</span>
+							<span class="badge">Kubernetes</span>
+							<span class="badge">Full‑Stack</span>
+						</div>
+						<div class="hero-cta">
+							<a class="cta primary" href="experience.html">See Experience</a>
+							<a class="cta secondary" href="projects.html">View Projects</a>
+							<a class="cta ghost" href="Resume - Yash_Yagnik.pdf" target="_blank" rel="noopener noreferrer">Open Resume (PDF)</a>
+						</div>
+						<div class="scroll-indicator">
+							<span>Scroll to explore</span>
+							<div class="scroll-arrow">↓</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			</div>
+			<!-- Main Content -->
+			<section id="wrapper">
+				<!-- Highlights -->
+				<section id="one" class="section-card spotlight">
+					<div class="inner">
+						<div class="content-wrapper">
+							<div class="image-wrapper">
+								<div class="company-deck">
+									<div class="deck-container">
+										<div class="company-card" data-company="jnj">
+											<div class="card-front">
+												<div class="image-glow-small"></div>
+												<img src="images/jnj.jpg" alt="Johnson & Johnson" class="section-image company-card-img" />
+												<div class="company-info">
+													<span class="company-name-small">Johnson & Johnson</span>
+													<span class="company-role-small">AI & Cloud Technical Lead</span>
+												</div>
+											</div>
+										</div>
+										<div class="company-card" data-company="comcast">
+											<div class="card-front">
+												<div class="image-glow-small"></div>
+												<img src="Comcast Logo.png" alt="Comcast NBCUniversal" class="section-image company-card-img" />
+												<div class="company-info">
+													<span class="company-name-small">Comcast NBCUniversal</span>
+													<span class="company-role-small">Software Engineer Intern</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="deck-indicator">
+										<span class="indicator-text">Hover to flip</span>
+									</div>
+								</div>
+							</div>
+							<div class="content">
+								<span class="section-label">Highlights</span>
+								<h2 class="major">AI/ML + Cloud Impact</h2>
+								<p>
+									I build systems that ship: agentic workflows for research and operations, cloud environments that mirror real-world enterprise constraints, and ML pipelines that improve accuracy and reduce manual effort.
+								</p>
+								<div class="tech-tags">
+									<span class="tech-tag">AI Agents</span>
+									<span class="tech-tag">NLP</span>
+									<span class="tech-tag">RAG</span>
+									<span class="tech-tag">AWS (EC2/RDS)</span>
+									<span class="tech-tag">Azure (LUIS/CLU)</span>
+									<span class="tech-tag">Scala Concurrency</span>
+								</div>
+								<a class="special" href="experience.html">Explore my experience</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Certifications -->
+				<section id="two" class="section-card spotlight alt">
+					<div class="inner">
+						<div class="content-wrapper reverse">
+							<div class="image-wrapper">
+								<div class="image-glow-small"></div>
+								<img src="Logos.png" alt="Certifications" class="section-image" />
+							</div>
+							<div class="content">
+								<span class="section-label">Education</span>
+								<h2 class="major">Courses & Certifications</h2>
+								<p>
+									Through school I have studied <strong>Data Structures</strong>, <strong>Algorithms</strong>, 
+									<strong>Operating Systems</strong>, <strong>Computer Architecture and Organization</strong>, 
+									<strong>Machine Learning: Fund & Apps</strong>, <strong>Web Programming</strong>. 
+									Also independently I have done a Data Science Bootcamp through Udemy and Building RAG Agents 
+									with LLMs course through NVIDIA.
+								</p>
+								<div class="certifications-list">
+									<div class="cert-item">
+										<span class="cert-icon">🔒</span>
+										<div>
+											<strong>Career Essentials in Cybersecurity</strong> by Microsoft and LinkedIn
+											<a href="https://www.linkedin.com/learning/certificates/8011ce2563d3239a55fde83a49c13e1c45d5378d7dc18d0882e4fef4aba8d1a9?accountId=56742337&u=56742337&success=true&authUUID=3ZL%2FVXU9SJiEjQcLRBiHwg%3D%3D" 
+											   rel="noopener noreferrer" target="_blank" class="cert-link">View Certificate</a>
+										</div>
+									</div>
+									<div class="cert-item">
+										<span class="cert-icon">🐍</span>
+										<div>
+											<strong>Python for Data Science and Machine Learning Bootcamp</strong> by Udemy
+											<a href="https://www.udemy.com/certificate/UC-f8d96c0a-edee-497a-881a-a0f7a7da601d/" 
+											   rel="noopener noreferrer" target="_blank" class="cert-link">View Certificate</a>
+										</div>
+									</div>
+								</div>
+								<a href="https://www.linkedin.com/in/yash-yagnik-648045245/details/certifications/" 
+								   rel="noopener noreferrer" target="_blank" class="special">View All Certifications</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+				<!-- Projects -->
+				<section id="four" class="section-card spotlight">
+					<div class="inner">
+						<div class="section-header">
+							<span class="section-label">Portfolio</span>
+							<h2 class="major">Projects</h2>
+							<p>These are some of the computer science projects I have built.</p>
+						</div>
+						<div class="projects-grid">
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="BokenBoards image.png" alt="BokenBoards" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://github.com/Yash-Yagnik/BokenBoards" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Code</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">BokenBoards</h3>
+									<p class="project-description">
+										Dynamic full-stack board game sharing web application; Leverages geospatial querying 
+										in MongoDB to deliver location-based search results for board games and events.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">JavaScript</span>
+										<span class="tech-badge">Node.js</span>
+										<span class="tech-badge">MongoDB</span>
+										<span class="tech-badge">Express</span>
+										<span class="tech-badge">GeoJSON</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="Senior Citizen Vaccine Image.png" alt="Vaccine Registration" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://www.facebook.com/share/g/1EqVR811ix/?mibextid=wwXIfr" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Project</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">Senior Citizen Covid-19 Vaccine Registration</h3>
+									<p class="project-description">
+										Automated Covid-19 vaccine registration for senior citizens leveraging Python and Google Forms API.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">Python</span>
+										<span class="tech-badge">Google Forms API</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="Concussion Project Image.png" alt="Concussion Detection" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://github.com/Yash-Yagnik/Concussion-Project/blob/main/Concussion%20Project%20Hardware%20Layout.pdf" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Hardware</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">Concussion Detection Gadget</h3>
+									<p class="project-description">
+										Device with embedded code that diagnoses the severity of a head collision by calculating g-force. 
+										Paired with an Android app that displays the diagnoses.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">Java</span>
+										<span class="tech-badge">C</span>
+										<span class="tech-badge">Kotlin</span>
+										<span class="tech-badge">Android</span>
+										<span class="tech-badge">Hardware</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="Tiny Chat Image.png" alt="TinyChat" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://github.com/Yash-Yagnik/TinyChat" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Code</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">TinyChat</h3>
+									<p class="project-description">
+										WhatsApp identical chatroom which can support up to 100 concurrent clients; 
+										Executed using Erlang message-passing.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">Erlang</span>
+										<span class="tech-badge">Message Passing</span>
+										<span class="tech-badge">Concurrency</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="Trivia Image.png" alt="Trivia Game" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://github.com/Yash-Yagnik/Trivia-Game" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Code</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">Trivia</h3>
+									<p class="project-description">
+										Multiplayer Trivia game with server-client architecture, utilizes socket connections 
+										and file I/O for parsing command-line arguments, possesses a large question database, 
+										and enables interactive gameplay.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">C</span>
+										<span class="tech-badge">Socket Programming</span>
+										<span class="tech-badge">File I/O</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="project-card">
+								<div class="project-image-wrapper">
+									<img src="Minishell image.png" alt="Minishell" class="project-image" />
+									<div class="project-overlay">
+										<a href="https://github.com/Yash-Yagnik/Minishell" rel="noopener noreferrer" target="_blank" class="project-link">
+											<span>View Code</span>
+										</a>
+									</div>
+								</div>
+								<div class="project-content">
+									<h3 class="project-title">Minishell</h3>
+									<p class="project-description">
+										Custom shell with essential built-in commands (cd, pwd, lf, lp) and implemented signal handling. 
+										Emulates core Linux kernel functionalities, using exec() for additional command execution.
+									</p>
+									<div class="project-tech">
+										<span class="tech-badge">C</span>
+										<span class="tech-badge">Linux</span>
+										<span class="tech-badge">Shell</span>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Sports -->
+				<section id="three" class="section-card projects-section">
+					<div class="inner">
+						<div class="content-wrapper">
+							<div class="image-wrapper">
+								<div class="image-glow-small"></div>
+								<img src="Fencing Photo.JPG" alt="Fencing" class="section-image" />
+							</div>
+							<div class="content">
+								<span class="section-label">Athletics</span>
+								<h2 class="major">Sports</h2>
+								<p>
+									I'm currently on the <strong>Men's fencing team</strong> at Stevens Institute of Technology. 
+									I have a <strong>83.3% win rate</strong> and have been awarded with both <strong>All-Academic Team</strong> 
+									and <strong>Scholar of Distinction</strong> for maintaining my position on the Dean's List.
+								</p>
+								<div class="stats-grid">
+									<div class="stat-item">
+										<div class="stat-number">83.3%</div>
+										<div class="stat-label">Win Rate</div>
+									</div>
+									<div class="stat-item">
+										<div class="stat-number">All-Academic</div>
+										<div class="stat-label">Team Award</div>
+									</div>
+								</div>
+								<a href="https://stevensducks.com/sports/mens-fencing/roster/yash-yagnik/17437" 
+								   rel="noopener noreferrer" target="_blank" class="special">View Profile</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Contact Footer -->
+			<section id="contact" class="contact-section">
+				<div class="inner">
+					<div class="contact-content">
+						<span class="section-label">Get In Touch</span>
+						<h2 class="major">Contact</h2>
+						<p>
+							Thank you so much for visiting my website! My contact information is listed below. 
+							Please feel free to reach out and I would love to chat!
+						</p>
+						<div class="contact-grid">
+							<a href="mailto:yashyagnik20@gmail.com" class="contact-item" rel="noopener noreferrer">
+								<span class="contact-icon">✉️</span>
+								<div>
+									<div class="contact-label">Email</div>
+									<div class="contact-value">yashyagnik20@gmail.com</div>
+								</div>
+							</a>
+							<a href="tel:+16099235196" class="contact-item" rel="noopener noreferrer">
+								<span class="contact-icon">📞</span>
+								<div>
+									<div class="contact-label">Phone</div>
+									<div class="contact-value">(609)-923-5196</div>
+								</div>
+							</a>
+							<div class="contact-item">
+								<span class="contact-icon">📍</span>
+								<div>
+									<div class="contact-label">Location</div>
+									<div class="contact-value">Greater Philadelphia Area, NJ</div>
+								</div>
+							</div>
+							<a href="https://github.com/Yash-Yagnik" class="contact-item" rel="noopener noreferrer" target="_blank">
+								<span class="contact-icon">💻</span>
+								<div>
+									<div class="contact-label">GitHub</div>
+									<div class="contact-value">@Yash-Yagnik</div>
+								</div>
+							</a>
+							<a href="https://www.linkedin.com/in/yash-yagnik-648045245/" class="contact-item" rel="noopener noreferrer" target="_blank">
+								<span class="contact-icon">💼</span>
+								<div>
+									<div class="contact-label">LinkedIn</div>
+									<div class="contact-value">Connect with me</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p class="copyright">&copy; 2025 Yash Yagnik. All rights reserved.</p>
+						<p class="footer-note">Website regularly being updated with new content!</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/modern.js"></script>
 	</body>
 </html>
