@@ -77,7 +77,6 @@ Here are a few of the key projects detailed on the site (demos coming soon):
 
 ---
 
-Feel free to let me know if you want a more minimal or stylized version (with badges, sections reordered, etc.), and I can generate that too.
-::contentReference[oaicite:0]{index=0}
+
 
 
